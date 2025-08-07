@@ -10,7 +10,7 @@
 - [Introduction](#introduction)
   - [Things to think about before choosing between WiFi, Zigbee and Z-Wave](#things-to-think-about-before-choosing-between-wifi-zigbee-and-z-wave)
   - [A note on dimmers](#a-note-on-dimmers)
-  - [Please list stuff that _doesn't_ work, too](#please-list-stuff-that-_doesnt_-work-too)
+  - [Stuff that _doesn't_ work](#stuff-that-_doesnt_-work)
 - [Ethernet devices](#ethernet-devices)
 - [Hubs](#hubs)
 - [Wifi devices](#wifi-devices)
