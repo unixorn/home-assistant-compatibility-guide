@@ -1,7 +1,7 @@
-# works-with-home-assistant
+# home-assistant-compatibility-guide
 
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Funixorn%2Fworks-with-home-assistant%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/unixorn/works-with-home-assistant/goto?ref=main)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unixorn/works-with-home-assistant/main.svg)](https://github.com/unixorn/works-with-home-assistant)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Funixorn%2Fhome-assistant-compatibility-guide%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/unixorn/home-assistant-compatibility-guide/goto?ref=main)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unixorn/home-assistant-compatibility-guide/main.svg)](https://github.com/unixorn/home-assistant-compatibility-guide)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -27,7 +27,7 @@
 
 ## Introduction
 
-This is a list of devices and software that work with [Home Assistant](https://www.home-assistant.io/) (HA) with minimal aggravation.
+This is a list of devices and software that work with [Home Assistant](https://www.home-assistant.io/) (HA) with minimal aggravation. This is _not_ a replacement for the official [Works With Home Assistant](https://works-with.home-assistant.io/) site. This list showcases devices that contributors have used with minimal hassle, not merely ones that work - most of us have encountered devices that you can coax into working.
 
 - If you have to reflash a device to use it with HA, please add that to the **Notes** column.
 - If you need to add a plugin to Home Assistant before it can be used, add that to **Notes** too.
@@ -41,19 +41,19 @@ Finally, if this list is useful to you, please star it to help it appear early i
 
 Read [Zigbee and WIFI Cooexistence](https://www.metageek.com/training/resources/zigbee-wifi-coexistence.html) on Metageek for more details, but the TL;DR is that Zigbee channels can overlap 2.4 GHz WIFI channels, and potentially cause odd and intermittent network issues for both.
 
-Z-Wave works on 908 MHz in the US and 868 MHz in Europe, so it doesn't have interference issues with WIFI or Bluetooth, but the devices tend to be more expensive.
+Z-Wave works on 908 MHz in the US and 868 MHz in Europe, so it doesn't have interference issues with WIFI or Bluetooth. Because there's basically one source for Z-Wave chips, the devices tend to be more expensive. That said, they're also more rigorously tested for following the standard than Zigbee devices are.
 
 On the other hand, Zigbee devices tend to cost less, and appear less vulnerable to supply chain issues since there are more vendors for the necessary chips.
 
-Most WIFI IOT gear seems to only work with 2.4 GHz, so you may want to upgrade your WIFI base station and router before adding too many devices, and also so you can have a separate walled off WIFI network for the IOT devices.
+Most WIFI IOT gear seems to only work with 2.4 GHz, so you may want to upgrade your WIFI base station and router before adding too many devices, and also to access points that allow you to set up multiple SSIDs so you can have a separate walled off WIFI network for the IOT devices.
 
 ### A note on dimmers
 
 Lutron holds a patent for sending status back to hubs on their RadioRA2 system. Not all Z-Wave or Zigbee dimmers license this patent, so some act weird. Leviton is known to license this patent, and their dimmers work well.
 
-### Please list stuff that _doesn't_ work, too
+### Stuff that _doesn't_ work
 
-I encourage you to add entries for things that don't work, don't work well, or were just hard to integrate with HA. Try to be very clear in the notes field what issues you encountered so people can be warned off and not waste money on devices which won't work with HA or that don't support HA for all their features.
+I also maintain the [Internet of Trash](https://github.com/unixorn/internet-of-trash) list for devices that don't work, don't work well, or were just hard to integrate with HA. It's not comprehensive, but I do recommend you check it before making any purchases.
 
 ## Ethernet devices
 
@@ -175,8 +175,8 @@ Devices from these vendors work without you having to take them apart and reflas
 
 Many thanks to all the contributors. The list wouldn't be nearly as complete without all your help.
 
-<a href="https://github.com/unixorn/works-with-home-assistant/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=unixorn/works-with-home-assistant" />
+<a href="https://github.com/unixorn/home-assistant-compatibility-guide/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=unixorn/home-assistant-compatibility-guide" />
 </a>
 
 Made with [contributors-img](https://contributors-img.web.app).
