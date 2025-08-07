@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - uses: docker://dkhamsing/awesome_bot:latest
       with:
         args: /github/workspace/README.md --request-delay 1 --allow 500,501,502,503,504,509,521 --allow-dupe --allow-redirect --allow-ssl --allow-timeout --white-list https://ipfs.io,slideshare,https://img.shields.io,https://codeclimate.com/github/unixorn/works-with-home-assistant,https://www.concourse.ci,https://smile.amazon.com,https://www.metageek.com,https://manuals.plus/ikea/004-431-30-tr%C3%A5dfri-remote-control-manual#axzz7kd0rP732
