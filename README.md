@@ -1,7 +1,7 @@
-# works-with-home-assistant
+# home-assistant-compatibility-guide
 
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Funixorn%2Fworks-with-home-assistant%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/unixorn/works-with-home-assistant/goto?ref=main)
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unixorn/works-with-home-assistant/main.svg)](https://github.com/unixorn/works-with-home-assistant)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Funixorn%2Fhome-assistant-compatibility-guide%2Fbadge%3Fref%3Dmain&style=flat)](https://actions-badge.atrox.dev/unixorn/home-assistant-compatibility-guide/goto?ref=main)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/unixorn/home-assistant-compatibility-guide/main.svg)](https://github.com/unixorn/home-assistant-compatibility-guide)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -10,7 +10,7 @@
 - [Introduction](#introduction)
   - [Things to think about before choosing between WiFi, Zigbee and Z-Wave](#things-to-think-about-before-choosing-between-wifi-zigbee-and-z-wave)
   - [A note on dimmers](#a-note-on-dimmers)
-  - [Please list stuff that _doesn't_ work, too](#please-list-stuff-that-_doesnt_-work-too)
+  - [Stuff that _doesn't_ work](#stuff-that-_doesnt_-work)
 - [Ethernet devices](#ethernet-devices)
 - [Hubs](#hubs)
 - [Wifi devices](#wifi-devices)
@@ -27,7 +27,7 @@
 
 ## Introduction
 
-This is a list of devices and software that work with [Home Assistant](https://www.home-assistant.io/) (HA) with minimal aggravation.
+This is a list of devices and software that work with [Home Assistant](https://www.home-assistant.io/) (HA) with minimal aggravation. This is _not_ a replacement for the official [Works With Home Assistant](https://works-with.home-assistant.io/) site. This list showcases devices that contributors have used with minimal hassle, not merely ones that work - most of us have encountered devices that you can coax into working.
 
 - If you have to reflash a device to use it with HA, please add that to the **Notes** column.
 - If you need to add a plugin to Home Assistant before it can be used, add that to **Notes** too.
@@ -39,21 +39,21 @@ Finally, if this list is useful to you, please star it to help it appear early i
 
 ### Things to think about before choosing between WiFi, Zigbee and Z-Wave
 
-Read [Zigbee and WIFI Cooexistence](https://www.metageek.com/training/resources/zigbee-wifi-coexistence.html) on Metageek for more details, but the TL;DR is that Zigbee channels can overlap 2.4 GHz WIFI channels, and potentially cause odd and intermittent network issues for both.
+Read [Zigbee and WIFI Cooexistence](https://www.metageek.com/training/resources/zigbee-wifi-coexistence/) on Metageek for more details, but the TL;DR is that Zigbee channels can overlap 2.4 GHz WIFI channels, and potentially cause odd and intermittent network issues for both.
 
-Z-Wave works on 908 MHz in the US and 868 MHz in Europe, so it doesn't have interference issues with WIFI or Bluetooth, but the devices tend to be more expensive.
+Z-Wave works on 908 MHz in the US and 868 MHz in Europe, so it doesn't have interference issues with WIFI or Bluetooth. Because there's basically one source for Z-Wave chips, the devices tend to be more expensive. That said, they're also more rigorously tested for following the standard than Zigbee devices are.
 
 On the other hand, Zigbee devices tend to cost less, and appear less vulnerable to supply chain issues since there are more vendors for the necessary chips.
 
-Most WIFI IOT gear seems to only work with 2.4 GHz, so you may want to upgrade your WIFI base station and router before adding too many devices, and also so you can have a separate walled off WIFI network for the IOT devices.
+Most WIFI IOT gear seems to only work with 2.4 GHz, so you may want to upgrade your WIFI base station and router before adding too many devices, and also to access points that allow you to set up multiple SSIDs so you can have a separate walled off WIFI network for the IOT devices.
 
 ### A note on dimmers
 
 Lutron holds a patent for sending status back to hubs on their RadioRA2 system. Not all Z-Wave or Zigbee dimmers license this patent, so some act weird. Leviton is known to license this patent, and their dimmers work well.
 
-### Please list stuff that _doesn't_ work, too
+### Stuff that _doesn't_ work
 
-I encourage you to add entries for things that don't work, don't work well, or were just hard to integrate with HA. Try to be very clear in the notes field what issues you encountered so people can be warned off and not waste money on devices which won't work with HA or that don't support HA for all their features.
+I also maintain the [Internet of Trash](https://github.com/unixorn/internet-of-trash) list for devices that don't work, don't work well, or were just hard to integrate with HA. It's not comprehensive, but I do recommend you check it before making any purchases.
 
 ## Ethernet devices
 
@@ -122,7 +122,6 @@ If items here need reflashing to work with Home Assistant, please state that in 
 | Sensor (Water) | Dome | [Dome Leak Sensor](https://amazon.com/gp/product/B01LXR0B8Q/) | Water leak sensor. Reports via Z-Wave when water is detected and also has an audible alarm. Includes a four foot sensor probe so you can use it in a sump or other awkward location. |
 | Smart Plug (Outdoor rated) | GE | [Enbrighten Z-Wave Plus Smart Plug](https://amazon.com/gp/product/B06W9NWFM3) | Outdoor rated, also works as a range extender. |
 | Smart Plug | Aeotec | [Aeotec Smart Outlet](https://amazon.com/gp/product/B07PJNL5DB/) | 15 Amp. Monitors electricity usage as well as controlling a device. |
-| Smart Plug | GE / Jasco  | [Enbrighten Z-Wave Plus Smart Plug w/2 USB Ports & 2 Outlets](https://amazon.com/gp/product/B0736311QF/) | Plug-in 2 Outlets covering 1 plug. Made by Jasco. Only covers one plug, and provides two separately controlled plugs along with USB ports. The whole device can be controlled, or each individual power plug can be controlled, and it also has a button for local control. |
 | Smart Plug | Minoston | [Minoston Z-Wave Mini Smart Plug](https://www.amazon.com/gp/product/B08LN2NPZ3/) | Indoor only. 15 Amp. plug but only rated at 10 Amp. Does not report power usage.
 | Smart Switch (Dimmer & Remote) | Leviton | [DD00R-DLZ 120VAC 60 Hz Decora Digital/Decora Smart Matching Dimmer Remote](https://amazon.com/gp/product/B01AFU1KOY) | Remote in-wall switch for the [DZ6HD-1BZ Dimmer](https://amazon.com/gp/product/B01N4F487U). |
 | Smart Switch (Dimmer) | Inovelli | [Inovelli Red Series Dimmer](https://amazon.com/gp/product/B07S1BMMGH) | Wall Switch Dimmer. 3 Way compatible. No Neutral required, but recommended. Depending on your Z-wave integration, may need special setup (https://support.inovelli.com/portal/en/kb/inovelli/switches) Energy Monitoring, Scene Control, RGB Notifications|
@@ -175,8 +174,8 @@ Devices from these vendors work without you having to take them apart and reflas
 
 Many thanks to all the contributors. The list wouldn't be nearly as complete without all your help.
 
-<a href="https://github.com/unixorn/works-with-home-assistant/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=unixorn/works-with-home-assistant" />
+<a href="https://github.com/unixorn/home-assistant-compatibility-guide/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=unixorn/home-assistant-compatibility-guide" />
 </a>
 
 Made with [contributors-img](https://contributors-img.web.app).
