@@ -39,7 +39,7 @@ Finally, if this list is useful to you, please star it to help it appear early i
 
 ### Things to think about before choosing between WiFi, Zigbee and Z-Wave
 
-Read [Zigbee and WIFI Cooexistence](https://www.metageek.com/training/resources/zigbee-wifi-coexistence.html) on Metageek for more details, but the TL;DR is that Zigbee channels can overlap 2.4 GHz WIFI channels, and potentially cause odd and intermittent network issues for both.
+Read [Zigbee and WIFI Cooexistence](https://www.metageek.com/training/resources/zigbee-wifi-coexistence/) on Metageek for more details, but the TL;DR is that Zigbee channels can overlap 2.4 GHz WIFI channels, and potentially cause odd and intermittent network issues for both.
 
 Z-Wave works on 908 MHz in the US and 868 MHz in Europe, so it doesn't have interference issues with WIFI or Bluetooth. Because there's basically one source for Z-Wave chips, the devices tend to be more expensive. That said, they're also more rigorously tested for following the standard than Zigbee devices are.
 
