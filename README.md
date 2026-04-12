@@ -26,13 +26,13 @@
 
 ## Introduction
 
-This is a list of devices and software that work with [Home Assistant](https://www.home-assistant.io/) (HA) with minimal aggravation. This is _not_ a replacement for the official [Works With Home Assistant](https://works-with.home-assistant.io/) site. This list showcases devices that contributors have used with minimal hassle, not merely ones that work - most of us have encountered devices that you can coax into working.
+This is a list of devices and software that work with [Home Assistant](https://www.home-assistant.io/) (HA) with minimal aggravation. This is _not_ a replacement for the official [Works With Home Assistant](https://works-with.home-assistant.io/) site. This list showcases devices that contributors have used with minimal hassle, not merely ones that work - most of us have encountered devices that you may have coaxed into working but would not buy another.
 
 - If you have to reflash a device to use it with HA, please add that to the **Notes** column.
-- If you need to add a plugin to Home Assistant before it can be used, add that to **Notes** too.
-- If it requires the devices connect to an internet server, even just for initial configuration, **please add that to the Notes for the device**. I want it easy to see which devices won't brick if the vendor goes out of business and also aren't vulnerable to some jackass hacking the company's servers.
+- If you need to add a plugin to HA before it can be used, add that to **Notes** too.
+- If it requires the devices connect to an internet server, even just for initial configuration, **please add that to the Notes for the device**. Make it easy to see which devices won't brick if the vendor goes out of business and also aren't vulnerable to some jackass hacking the company's servers.
 - If the device can be reflashed to make it independent of internet servers, please add that to that entry's notes column, preferably with a link to the instructions.
-- Please also add entries for tools, tutorials and utilities. Things like zigbee2mqtt, Node Red, and other software you can run that interact with or supplement Home Assistant's functionality definitely belong in this list.
+- Please also add entries for tools, tutorials and utilities. Things like [zigbee2mqtt](https://www.zigbee2mqtt.io/), [Node Red](https://nodered.org/), and other software you can run that interact with or supplement Home Assistant's functionality definitely belong in this list.
 
 Finally, if this list is useful to you, please star it to help it appear early in search results for other people.
 
